@@ -1,0 +1,43 @@
+\begin{thebibliography}{1}
+
+\bibitem{ParallelismConcurrency}
+Parallelism vs concurrency after haskellwiki.
+\newblock \url{https://wiki.haskell.org/Parallelism_vs._Concurrency}.
+\newblock Accessed: 2017-05-16.
+
+\bibitem{Actormodel}
+Carl Hewitt.
+\newblock Actor model for discretionary, adaptive concurrency.
+\newblock {\em CoRR}, abs/1008.1459, 2010.
+
+\bibitem{Elixir}
+Elixir homepage.
+\newblock \url{http://elixir-lang.org}.
+\newblock Accessed: 2017-05-04.
+
+\bibitem{Erlang}
+Erlang homepage.
+\newblock \url{https://www.erlang.org/}.
+\newblock Accessed: 2017-05-04.
+
+\bibitem{supervisord}
+Supervisord homepage.
+\newblock \url{http://supervisord.org/}.
+\newblock Accessed: 2017-05-05.
+
+\bibitem{microservices}
+Martin fowler on microservices.
+\newblock \url{https://martinfowler.com/articles/microservices.html}.
+\newblock Accessed: 2017-05-05.
+
+\bibitem{OpenMP}
+Openmp website.
+\newblock \url{http://www.openmp.org/}.
+\newblock Accessed: 2017-05-16.
+
+\bibitem{MPI}
+Message passing interface, openmpi implementation.
+\newblock \url{https://www.open-mpi.org/}.
+\newblock Accessed: 2017-05-16.
+
+\end{thebibliography}

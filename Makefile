@@ -1,8 +1,9 @@
-compile = g++ -std=c++11 -lboost_program_options -O3
+compile = g++ -std=c++0x -lboost_program_options -O3
 testdata_mult = data/1500x1500.matrix
 testdata_mpi = data/18000x18000.matrix
 testdata_add = data/10000x10000.matrix
 testdata_gauss = data/2500x2500.matrix data/2500x1.matrix
+testdata_gauss_elim = data/18000x18000.matrix data/18000x1.matrix
 .PHONY: all build clean data
 
 
@@ -17,6 +18,7 @@ build:
 	make add
 	make mult
 	make gauss
+	make gaussElim
 
 clean:
 	rm -f build/*
@@ -33,6 +35,7 @@ data:
 	ROWS=2500 COLS=2500 build/genData
 	ROWS=10000 COLS=10000 build/genData
 	ROWS=18000 COLS=18000 build/genData
+	ROWS=18000 COLS=1 build/genData
 
 runall:
 	rm -f timing/*
@@ -40,6 +43,7 @@ runall:
 	make runadd
 	make runmult
 	make rungauss
+	make rungaussElim
 
 ##################################
 # Additions
@@ -114,10 +118,10 @@ multOmp:
 	OMP_NUM_THREADS=16 build/multOmp --timing_output=timing/multOmp --file_out=/dev/null $(testdata_mult) 
 
 ###################################
-# Gaussian Elimination
+# Gaussian Row Matrix generation
 
 rungauss:
-	echo "----- Running gaussian elimination benchmarks --------"
+	echo "----- Running gaussian row generation benchmarks --------"
 	make gaussSeq
 	make gaussOmp
 
@@ -134,3 +138,26 @@ gaussOmp:
 	OMP_NUM_THREADS=4 build/gaussOmp --timing_output=timing/gaussOmp --file_out=/dev/null $(testdata_gauss)
 	OMP_NUM_THREADS=8 build/gaussOmp --timing_output=timing/gaussOmp --file_out=/dev/null $(testdata_gauss)
 	OMP_NUM_THREADS=16 build/gaussOmp --timing_output=timing/gaussOmp --file_out=/dev/null $(testdata_gauss)
+
+#####################################
+# Gaussian Elimination
+
+rungaussElim:
+	echo "----- Running gaussian Elimination benchmarks --------"
+	make gaussElimSeq
+	make gaussElimOmp
+
+
+gaussElim:
+	$(compile) -o build/gaussElimSeq gaussElimSeq.cpp
+	$(compile) -fopenmp -o build/gaussElimOmp gaussElimOmp.cpp
+
+gaussElimSeq:
+	build/gaussElimSeq --timing_output=timing/gaussElimSeq --file_out=/dev/null $(testdata_gauss_elim)
+
+gaussElimOmp:
+	OMP_NUM_THREADS=1 build/gaussElimOmp --timing_output=timing/gaussElimOmp --file_out=/dev/null $(testdata_gauss_elim)
+	OMP_NUM_THREADS=2 build/gaussElimOmp --timing_output=timing/gaussElimOmp --file_out=/dev/null $(testdata_gauss_elim)
+	OMP_NUM_THREADS=4 build/gaussElimOmp --timing_output=timing/gaussElimOmp --file_out=/dev/null $(testdata_gauss_elim)
+	OMP_NUM_THREADS=8 build/gaussElimOmp --timing_output=timing/gaussElimOmp --file_out=/dev/null $(testdata_gauss_elim)
+	OMP_NUM_THREADS=16 build/gaussElimOmp --timing_output=timing/gaussElimOmp --file_out=/dev/null $(testdata_gauss_elim)

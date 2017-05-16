@@ -1,0 +1,183 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Arch Linux) (preloaded format=pdflatex 2017.5.4)  16 MAY 2017 15:20
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**paper.tex
+(./paper.tex
+LaTeX2e <2017/01/01> patch level 3
+Babel <3.9r> and hyphenation patterns for 83 language(s) loaded.
+(/usr/share/texmf-dist/tex/latex/paper/paper.cls
+Document Class: paper 2008/05/30 1.0l LaTeX document class (wm).
+\hours=\count79
+\minutes=\count80
+(/usr/share/texmf-dist/tex/latex/base/size10.clo
+File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+)
+\beforetitlespace=\skip41
+\c@part=\count81
+\c@section=\count82
+\c@subsection=\count83
+\c@subsubsection=\count84
+\c@paragraph=\count85
+\c@subparagraph=\count86
+\exampleindent=\skip42
+\c@figure=\count87
+\c@table=\count88
+\abovecaptionskip=\skip43
+\belowcaptionskip=\skip44
+\bibindent=\dimen102
+)
+(/usr/share/texmf-dist/tex/latex/listings/listings.sty
+(/usr/share/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+\lst@mode=\count89
+\lst@gtempboxa=\box26
+\lst@token=\toks15
+\lst@length=\count90
+\lst@currlwidth=\dimen103
+\lst@column=\count91
+\lst@pos=\count92
+\lst@lostspace=\dimen104
+\lst@width=\dimen105
+\lst@newlines=\count93
+\lst@lineno=\count94
+\lst@maxwidth=\dimen106
+
+(/usr/share/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
+\c@lstnumber=\count95
+\lst@skipnumbers=\count96
+\lst@framebox=\box27
+)
+(/usr/share/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2015/06/04 1.6 listings configuration
+))
+Package: listings 2015/06/04 1.6 (Carsten Heinz)
+
+(/usr/share/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip10
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+(/usr/share/texmf-dist/tex/latex/csquotes/csquotes.sty
+Package: csquotes 2017/03/11 v5.2b context-sensitive quotations (JAW)
+
+(/usr/share/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2017/01/02 v2.4 e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count97
+)
+\csq@reset=\count98
+\csq@gtype=\count99
+\csq@glevel=\count100
+\csq@qlevel=\count101
+\csq@maxlvl=\count102
+\csq@tshold=\count103
+\csq@ltx@everypar=\toks16
+
+(/usr/share/texmf-dist/tex/latex/csquotes/csquotes.def
+File: csquotes.def 2017/03/11 v5.2b csquotes generic definitions (JAW)
+)
+Package csquotes Info: Trying to load configuration file 'csquotes.cfg'...
+Package csquotes Info: ... configuration file loaded successfully.
+
+(/usr/share/texmf-dist/tex/latex/csquotes/csquotes.cfg
+File: csquotes.cfg 
+)
+Package csquotes Info: Enabling multilingual quotes.
+)
+Package csquotes Info: Checking for multilingual support...
+Package csquotes Info: ... none found.
+
+
+Package csquotes Warning: No multilingual support.
+(csquotes)                Cannot enable multilingual quotes on input line 8.
+
+(./paper.aux)
+\openout1 = `paper.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+\c@lstlisting=\count104
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <14.4> on input line 14.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 14.
+ (./paper.toc
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 1.
+)
+\tf@toc=\write3
+\openout3 = `paper.toc'.
+
+ [1
+
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2]
+Overfull \hbox (2.80618pt too wide) in paragraph at lines 47--48
+[]\OT1/cmr/m/n/10 There are no avail-able syn-chro-niza-tion prim-i-tives, all 
+syn-chro-niza-tion needs
+ []
+
+[3]
+LaTeX Font Info:    Try loading font information for OML+cmr on input line 82.
+ (/usr/share/texmf-dist/tex/latex/base/omlcmr.fd
+File: omlcmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <10> not available
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 82.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 82.
+
+(/usr/share/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 82.
+ [4] [5] [6]
+Overfull \hbox (33.00385pt too wide) in paragraph at lines 134--135
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+[7] (./paper.bbl [8]
+Underfull \hbox (badness 1975) in paragraph at lines 39--42
+[]\OT1/cmr/m/n/10 Message pass-ing in-ter-face, open-mpi im-ple-men-ta-tion.  $
+\OT1/cmtt/m/n/10 https : / / www .
+ []
+
+) [9] (./paper.aux) ) 
+Here is how much of TeX's memory you used:
+ 2566 strings out of 493013
+ 35661 string characters out of 6139318
+ 110972 words of memory out of 5000000
+ 6139 multiletter control sequences out of 15000+600000
+ 8444 words of font info for 30 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 26i,8n,32p,901b,1458s stack positions out of 5000i,500n,10000p,200000b,80000s
+ </usr/share/texmf-dist/fonts/pk/ljfour/public/cm/dpi600/c
+mti10.pk> </home/sph3re/.texlive/texmf-var/fonts/pk/ljfour/public/cm/cmtt10.600
+pk> </usr/share/texmf-dist/fonts/pk/ljfour/public/cm/dpi600/cmmi10.pk> </usr/sh
+are/texmf-dist/fonts/pk/ljfour/public/cm/dpi600/cmbx10.pk> </usr/share/texmf-di
+st/fonts/pk/ljfour/public/cm/dpi600/cmsy10.pk> </home/sph3re/.texlive/texmf-var
+/fonts/pk/ljfour/public/cm/cmr9.600pk> </home/sph3re/.texlive/texmf-var/fonts/p
+k/ljfour/public/cm/cmss9.600pk> </usr/share/texmf-dist/fonts/pk/ljfour/public/c
+m/dpi600/cmr10.pk> </home/sph3re/.texlive/texmf-var/fonts/pk/ljfour/public/cm/c
+mssbx10.720pk> </home/sph3re/.texlive/texmf-var/fonts/pk/ljfour/public/cm/cmssi
+12.720pk> </home/sph3re/.texlive/texmf-var/fonts/pk/ljfour/public/cm/cmssbx10.1
+037pk>
+Output written on paper.pdf (9 pages, 89547 bytes).
+PDF statistics:
+ 318 PDF objects out of 1000 (max. 8388607)
+ 66 compressed objects within 1 object stream
+ 0 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+
