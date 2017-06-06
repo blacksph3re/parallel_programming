@@ -1,7 +1,7 @@
 
 
 build:
-	mpicc -lm -g -o bitonic bitonic.c
+	mpicc -lm -g -o bitonic -O3 bitonic.c
 
 run:
 	mpirun -n 4 bitonic 28
@@ -18,3 +18,5 @@ scalingtest:
 	mpirun -n 4 bitonic 10000000
 	mpirun -n 8 bitonic 10000000
 	mpirun -n 16 bitonic 10000000
+	mpirun -n 32 bitonic 10000000
+	mpirun -n 64 bitonic 10000000

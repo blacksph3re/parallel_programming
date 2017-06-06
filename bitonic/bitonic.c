@@ -14,7 +14,7 @@ int ComparisonFunc(const void* a, const void* b);
 int min ( int a, int b ) { return a < b ? a : b; }
 void OutputAll();
 
-
+clock_t timer_init;
 clock_t timer_start;
 clock_t timer_end;
 int process_rank;
@@ -30,6 +30,10 @@ int main(int argc, char* argv[]) {
     MPI_Init(&argc, &argv);
     MPI_Comm_size(MPI_COMM_WORLD, &num_processes);
     MPI_Comm_rank(MPI_COMM_WORLD, &process_rank);
+
+    MPI_Barrier(MPI_COMM_WORLD);
+    if(process_rank == MASTER)
+        timer_init = clock();
 
     // Store the array with one more integer in front, so we can easily transmit the size of data to be sent too
     int num_elements = atoi(argv[1]);
@@ -99,17 +103,17 @@ int main(int argc, char* argv[]) {
 
     
     MPI_Barrier(MPI_COMM_WORLD); // Replace with MPI-Gather if you actually want to distribute data
+    //OutputAll();
+
+    free(array);
+    MPI_Finalize();
 
     if (process_rank == MASTER) {
         timer_end = clock();
-        printf("Time Elapsed (Sec): %f\n", (double)(timer_end - timer_start) / CLOCKS_PER_SEC);
+        printf("Time Elapsed (Sec): %f, time since init: %f\n", 
+            (double)(timer_end - timer_start) / CLOCKS_PER_SEC,
+            (double)(timer_end - timer_init) / CLOCKS_PER_SEC);
     }
-    OutputAll();
-
-    free(array);
-
-    
-    MPI_Finalize();
     return 0;
 }
 
