@@ -6,6 +6,9 @@ build:
 run:
 	mpirun -n 4 bitonic 28
 
+longrun:
+	mpirun -n 4 bitonic 100000000
+
 debug:
 	mpirun -n 1 gdb bitonic
 

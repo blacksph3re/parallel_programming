@@ -104,7 +104,7 @@ int main(int argc, char* argv[]) {
         timer_end = clock();
         printf("Time Elapsed (Sec): %f\n", (double)(timer_end - timer_start) / CLOCKS_PER_SEC);
     }
-    //OutputAll();
+    OutputAll();
 
     free(array);
 
