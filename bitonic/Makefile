@@ -2,6 +2,10 @@
 
 build:
 	mpicc -lm -g -o bitonic -O3 bitonic.c
+	gcc -o quicksort -O3 quicksort.c
+
+quicksort:
+	./quicksort 50000000
 
 run:
 	mpirun -n 4 bitonic 28

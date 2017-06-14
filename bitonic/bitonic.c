@@ -31,7 +31,7 @@ int main(int argc, char* argv[]) {
     MPI_Comm_size(MPI_COMM_WORLD, &num_processes);
     MPI_Comm_rank(MPI_COMM_WORLD, &process_rank);
 
-    MPI_Barrier(MPI_COMM_WORLD);
+    MPI_Barrier(MPI_COMM_WORLD); // For time measurement
     if(process_rank == MASTER)
         timer_init = clock();
 
@@ -75,7 +75,6 @@ int main(int argc, char* argv[]) {
     }
     
     MPI_Barrier(MPI_COMM_WORLD); // For time measurement
-    
     if (process_rank == MASTER) {
         printf("Number of Processes spawned: %d\n", num_processes);
         timer_start = clock();
@@ -93,7 +92,10 @@ int main(int argc, char* argv[]) {
             // i identifies the window (blue/green box in .pdf), j the iteration within this.
             // j also represents the distance to send the data to, 0->1, 1->2, 2->4, 3->8 etc (this is used in the compare functions)
             // The actual high/low distro is magic to me
-            if (((process_rank >> (i + 1)) % 2 == 0 && (process_rank >> j) % 2 == 0) || ((process_rank >> (i + 1)) % 2 != 0 && (process_rank >> j) % 2 != 0)) {
+            if (((process_rank >> (i + 1)) % 2 == 0 && 
+                (process_rank >> j) % 2 == 0) || 
+               ((process_rank >> (i + 1)) % 2 != 0 && 
+                (process_rank >> j) % 2 != 0)) {
                 CompareLow(j);
             } else {
                 CompareHigh(j);
